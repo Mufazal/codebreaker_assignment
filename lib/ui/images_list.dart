@@ -1,7 +1,6 @@
 import 'package:codebreaker_assignment/api/api_resource.dart';
 import 'package:codebreaker_assignment/api/api_status.dart';
-import 'package:codebreaker_assignment/controller.dart/movie_detail_provider.dart';
-import 'package:codebreaker_assignment/controller.dart/movie_list_provider.dart';
+import 'package:codebreaker_assignment/controller.dart/image_list_provider.dart';
 import 'package:codebreaker_assignment/objects/image_model.dart';
 import 'package:codebreaker_assignment/ui/image_detail.dart';
 import 'package:flutter/material.dart';
@@ -87,10 +86,8 @@ class MoviesListScreen extends StatelessWidget {
         Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ChangeNotifierProvider(
-                  create: (context) => MovieDetailProvider(),
-                  child: MovieDetailScreen(id: model.id, model: model)),
-            ));
+                builder: (context) =>
+                    MovieDetailScreen(id: model.id, model: model)));
       },
       child: Card(
         elevation: 8,

@@ -1,10 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:codebreaker_assignment/api/api_status.dart';
-import 'package:codebreaker_assignment/controller.dart/movie_detail_provider.dart';
 import 'package:codebreaker_assignment/objects/image_model.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:codebreaker_assignment/api/api_resource.dart';
 import 'package:flutter/cupertino.dart';
 
 class MovieDetailScreen extends StatelessWidget {
@@ -17,7 +13,7 @@ class MovieDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
-    var controller = Provider.of<MovieDetailProvider>(context, listen: false);
+
     // controller.getMovieDetail(id);
     return Material(
       child: SafeArea(
