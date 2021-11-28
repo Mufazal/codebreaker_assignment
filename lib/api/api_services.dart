@@ -11,7 +11,7 @@ class ApiServices {
   static getMoviesList() async {
     try {
       // Dio dio = Dio();
-      Uri uri = Uri.parse("${Api.getMoviesList}?api_key=${Constants.API_KEY}");
+      Uri uri = Uri.parse("${Api.getImagesList}");
       var response = await http
           .get(
         uri,
@@ -29,7 +29,7 @@ class ApiServices {
 
       if (apiResponse.isSuccessful()) {
         return PsResource(
-            data: json.decode(response.body),
+            list: json.decode(response.body),
             message: "",
             status: PsStatus.SUCCESS);
       } else {

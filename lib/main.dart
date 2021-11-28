@@ -1,5 +1,5 @@
 import 'package:codebreaker_assignment/controller.dart/movie_list_provider.dart';
-import 'package:codebreaker_assignment/ui/movies_list.dart';
+import 'package:codebreaker_assignment/ui/images_list.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,7 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:codebreaker_assignment/api/api_resource.dart';
 import 'package:codebreaker_assignment/api/api_services.dart';
 import 'package:codebreaker_assignment/utils/utils.dart';
-import 'package:flutter/cupertino.dart';
 
 class MovieListProvider extends ChangeNotifier {
   PsResource model;
